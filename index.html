@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI -Design-Login form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+   <div class="form">
+       <form class="login-form" action="" method="post">
+       <img src="user.png"width="40px" height="40px">
+       <input type="text" class="user-input" name="" placeholder="Username" required>
+       <input type="password" class="user-input" name="" placeholder="Password" required>
+      <div class="option-01">
+          <label class="remember-me"><input type="checkbox" name="">Remember me</label>
+       <a href="#">Forgot your password?</a>
+        </div>
+        <input type="submit" class="btn" value="LOGIN">
+        <div class="option-02">
+            <p>Not Registered? <a href="#">Create an Account</a></p>
+        </div>
+    </form>
+ 
+
+
+    <form action="" method="post" class="signup-form">
+        <img src="reg.png" width="40px" height="40px">
+        <input type="text" class="user-input" name="" placeholder="Username" required>
+        <input type="email" class="user-input" name="" placeholder="Email Address" required>
+        <input type="password" class="user-input" name="" placeholder="Password" required>
+        <input type="submit" class="btn" value="REGISTER">
+        <div class="option-02">
+            <p>Already Registered? <a href="#">Sign In</a></p>
+        </div>
+    </form>
+    </div>
+
+
+
+
+
+    <script> 
+      $('.option-02 a').click(function(){
+          $('form').animate({
+              height: "toggle" , opacity: "toggle"
+          }, "slow");
+      });
+    
+    
+    </script>
+</body>
+</html>
